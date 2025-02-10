@@ -1,6 +1,6 @@
 # barrientos_assignment2
 
-A new Flutter project.
+Try lang palitan to
 
 ## Getting Started
 
