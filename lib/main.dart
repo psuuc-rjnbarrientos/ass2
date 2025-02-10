@@ -124,7 +124,11 @@ class _ShoppingListAppHomeScreenState extends State<ShoppingListAppHomeScreen> {
                   var item = itemResults[index];
                   return Card(
                     child: ListTile(
-                      title: Text(item.itemName),
+                      title: Text(item.itemName, style: TextStyle(
+                            decoration: item.isChecked
+                                ? TextDecoration.lineThrough
+                                : TextDecoration.none),
+                      ),
                       trailing: Checkbox(
                         value: item.isChecked,
                         onChanged: (value) {
